@@ -16,7 +16,7 @@ def initialize
 end
 
 def display_board
-<<<<<<< HEAD
+
 puts " #{@board[0]} | #{@board[1]} | #{@board[2]} "
 puts "-----------------------------------------"
 puts " #{@board[3]} | #{@board[4]} | #{@board[5]} "
@@ -25,7 +25,7 @@ puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
 end
 
 def input_to_index(string)
-index = string.to_i - 1
+string.to_i - 1
 end
 
 def move(index, token)
