@@ -41,8 +41,7 @@ def valid_move?(index)
 end
 
 def turn_count
-@board.reduce(0) {|token, total| total += 1 if token != " "}
-
+@board.count {|token| token != " "}
 end
 
 def current_player
