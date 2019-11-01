@@ -45,12 +45,7 @@ def turn_count
 end
 
 def current_player
-if turn_count % 2 == 0
-  current = "X"
-else
-  current = "O"
-end
-current
+turn_count % 2 == 0  ? "X" : "O"
 end
 
 def turn
