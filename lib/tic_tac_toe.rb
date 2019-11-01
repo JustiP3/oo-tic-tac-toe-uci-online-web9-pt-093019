@@ -145,7 +145,7 @@ end
 
 end #end of play method
 
-=======
+
 puts "#{@board[0]} | #{@board[1]} | #{@board[2]}"
 puts "-----------------------------------------"
 puts "#{@board[3]} | #{@board[4]} | #{@board[5]}"
@@ -153,7 +153,6 @@ puts "-----------------------------------------"
 puts "#{@board[6]} | #{@board[7]} | #{@board[8]}"
 end
 
->>>>>>> 3b5e93a4301f2f7e1f09fa27dcfc566703242a51
 
 
 end #end of tictactoe class
