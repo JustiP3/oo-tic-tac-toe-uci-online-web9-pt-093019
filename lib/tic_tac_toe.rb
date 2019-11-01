@@ -33,16 +33,11 @@ def move(index, token)
 end
 
 def position_taken?(index)
-  tokens = ["X", "O"]
-  taken = false
-  tokens.each {|x| taken = true if x == @board[index]}
-  taken
+ @board[index] != " "
 end
 
-def valid_move?(index)
-  valid = true
-  valid = false if (position_taken?(index) == true || index < 0 || index > 8)
-  valid
+def valid_move?(index)  
+ !position_taken?(index) && index.between?(0, 8)  
 end
 
 def turn_count
