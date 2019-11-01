@@ -42,7 +42,7 @@ end
 
 def turn_count
 
-@board.reduce {|total, token| total += 1 if token != " "}
+@board.reduce(0) {|total, token| total += 1 if token != " "}
 
 end
 
