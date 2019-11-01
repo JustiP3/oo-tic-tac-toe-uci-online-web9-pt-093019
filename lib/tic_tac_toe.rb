@@ -53,14 +53,13 @@ this_turn = gets.chomp
 index = input_to_index(this_turn) #get input
 
 #check if input is valid and keep prompting until we get valid input
-while (valid_move?(index)==false) do
+while !valid_move?(index) do
   puts "Please enter a valid move"
   this_turn = gets.chomp
   index = input_to_index(this_turn)
 end
 
-token = current_player
-move(index, token)
+move(index, current_player)
 display_board
 end #end of turn method
 
